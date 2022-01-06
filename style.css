@@ -20,11 +20,10 @@
 :root {
   --background: #222;
   --text: #eee;
-  --highlight-1: #123456;
-  --highlight-2: #7890ab;
 }
 
 /* body */
+
 body {
   font-family: "Press Start 2P", cursive;
   background-color: var(--background);
@@ -33,7 +32,7 @@ body {
 
 /* header */
 header {
-  margin: 50px auto;
+  margin-top: 100px;
 }
 
 h1,
@@ -44,9 +43,69 @@ h2 {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 1.5rem;
+}
+
+/* number section */
+.number-section {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.number {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  background-color: var(--text);
+  color: var(--background);
+  display: inline-block;
+  width: 100px;
+}
+
+/* controls section */
+.controls-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.left-panel,
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.guess-input,
+.button {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+}
+
+.guess-input {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--text);
 }

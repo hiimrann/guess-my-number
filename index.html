@@ -11,29 +11,32 @@
   <body>
     <header>
       <h1>Guess my number!</h1>
-      <h2>(Between 1 and 100)</h2>
+      <h2>Between 1 and 100</h2>
     </header>
 
     <main>
       <!-- the number -->
-      <section class="number-box">
+      <section class="number-section">
         <div class="number">?</div>
         <div class="message">Start guessing...</div>
       </section>
 
-      <!-- controls -->
+      <!-- controls and scores -->
       <section class="controls-section">
-        <input type="number" class="guess-input" />
-        <button class="button check-button">Check</button>
-        <button class="button again-button">Play again</button>
-      </section>
+        <!-- controls -->
+        <section class="left-panel">
+          <input type="number" class="guess-input" />
+          <button class="button check-button">Check number</button>
+          <button class="button again-button">Play again</button>
+        </section>
 
-      <!-- scores -->
-      <section class="scores-section">
-        <div class="score">Score: <span class="score-number">0</span></div>
-        <div class="highscore">
-          Highscore: <span class="highscore-number">0</span>
-        </div>
+        <!-- scores -->
+        <section class="right-panel">
+          <div class="score">Score: <span class="score-number">0</span></div>
+          <div class="highscore">
+            Highscore: <span class="highscore-number">0</span>
+          </div>
+        </section>
       </section>
     </main>
 
