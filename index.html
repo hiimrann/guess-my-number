@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Guess my number!</h1>
+      <h2>(Between 1 and 100)</h2>
+    </header>
+
+    <main>
+      <!-- the number -->
+      <section class="number-box">
+        <div class="number">?</div>
+        <div class="message">Start guessing...</div>
+      </section>
+
+      <!-- controls -->
+      <section class="controls-section">
+        <input type="number" class="guess-input" />
+        <button class="button check-button">Check</button>
+        <button class="button again-button">Play again</button>
+      </section>
+
+      <!-- scores -->
+      <section class="scores-section">
+        <div class="score">Score: <span class="score-number">0</span></div>
+        <div class="highscore">
+          Highscore: <span class="highscore-number">0</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        This is a JavaScript learning project by
+        <a href="https://imrannhuda.github.io/">Imran N</a>.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
