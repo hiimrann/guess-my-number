@@ -3,8 +3,7 @@
 // generate secret number
 let secretNumber;
 let generateSecretNumber = function () {
-  secretNumber = Math.trunc(Math.random() * 100) + 1;
-  console.log(secretNumber);
+  secretNumber = Math.trunc(Math.random() * 10000) + 1;
 };
 generateSecretNumber();
 
@@ -104,6 +103,7 @@ document.querySelector(".again-button").addEventListener("click", function () {
   score = 20;
   updateTextContent(".score", score);
   updateTextContent(".message", initialMessage);
+  updateTextContent(".number", "?");
   document.querySelector(".guess").value = "";
   updateColor("black");
 });
