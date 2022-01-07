@@ -3,7 +3,7 @@
 // generate secret number
 let secretNumber;
 let generateSecretNumber = function () {
-  secretNumber = Math.trunc(Math.random() * 1000) + 1;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
 };
 generateSecretNumber();
 
@@ -54,8 +54,8 @@ let updateColor = function (theme) {
   }
 };
 
-// when player clicks "Check number"
-document.querySelector(".check-button").addEventListener("click", function () {
+// function for checking the number
+let checkNumber = function () {
   // store the guess in a variable
   let guess = Number(document.querySelector(".guess").value);
 
@@ -94,6 +94,18 @@ document.querySelector(".check-button").addEventListener("click", function () {
       updateTextContent(".message", "Game over! :(");
       updateColor("black");
     }
+  }
+};
+
+// when player clicks "Check number"
+document.querySelector(".check-button").addEventListener("click", function () {
+  checkNumber();
+});
+
+// when player presses Enter
+document.querySelector(".guess").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    checkNumber();
   }
 });
 
