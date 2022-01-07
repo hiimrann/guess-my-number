@@ -5,46 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Guess My Number!</title>
   </head>
 
   <body>
-    <header>
-      <h1>Guess my number!</h1>
-      <h2>Between 1 and 10000</h2>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Guess my number!</h1>
+        <h2>Between 1 and 10000</h2>
+      </header>
 
-    <main>
-      <!-- the number -->
-      <section class="number-section">
-        <div class="number">?</div>
-        <div class="message">Start guessing...</div>
-      </section>
-
-      <!-- controls and scores -->
-      <section class="controls-section">
-        <!-- controls -->
-        <section class="left-panel">
-          <input type="number" class="guess" />
-          <button class="button check-button">Check number</button>
-          <button class="button again-button">Play again</button>
+      <main>
+        <!-- the number -->
+        <section class="number-section">
+          <div class="number">?</div>
+          <div class="message">Start guessing...</div>
         </section>
 
-        <!-- scores -->
-        <section class="right-panel">
-          <div>Score: <span class="score">20</span></div>
-          <div>Highscore: <span class="highscore">0</span></div>
+        <!-- controls and scores -->
+        <section class="controls-section">
+          <!-- controls -->
+          <section class="left-panel">
+            <input type="number" class="guess" />
+            <button class="button check-button">Check number</button>
+            <button class="button again-button">Play again</button>
+          </section>
+
+          <!-- scores -->
+          <section class="right-panel">
+            <div>Score: <span class="score">20</span></div>
+            <div>Highscore: <span class="highscore">0</span></div>
+          </section>
         </section>
-      </section>
-    </main>
+      </main>
 
-    <footer>
-      <div>
-        This is a fully reworked JavaScript course project made by
-        <a href="https://imrannhuda.github.io/">Imran N</a>.
-      </div>
-    </footer>
-
+      <footer>
+        <div>
+          This is a fully reworked JavaScript course project made by
+          <a href="https://imrannhuda.github.io/">Imran N</a>.
+        </div>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
